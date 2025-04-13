@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="sidebar">
+        <div class="profile">
+            <div class="avatar">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div class="profile-info">
+                <h2>Mizo</h2>
+                <p>AI Therapist</p>
+            </div>
+        </div>
+        
+        <div class="app-info">
+            <h3>About Mizo</h3>
+            <p>Mizo is your AI therapist companion, designed to provide support and schedule appointments at SoulCare Therapy Center.</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-comments"></i>
+                    <p>Chat for support</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-calendar-alt"></i>
+                    <p>Book appointments</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-envelope"></i>
+                    <p>Get email confirmations</p>
+                </div>
+            </div>
+            
+            <div class="appointment-hint">
+                <h4>Need to schedule?</h4>
+                <p>Just say "book appointment" to get started.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Chat with Mizo</h2>
+            
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message">
+                <div class="message-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="message-content">
+                    <p>Hello! I'm Mizo, your AI therapist from SoulCare Therapy Center. How can I help you today?</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Type your message here...">
+            <button id="sendButton">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+{% endblock %}
