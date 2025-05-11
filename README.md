@@ -19,7 +19,7 @@
 - **Backend**: Python, Flask
 - **Database**: Google Sheets (Spreadsheet-based system)
 - **AI Engine**: OpenAI GPT-4
-- **Deployment**: [Render](https://render.com)
+- **Deployment**: [Render](https://pronay-mizobot.onrender.com/) 
 
 ---
 
