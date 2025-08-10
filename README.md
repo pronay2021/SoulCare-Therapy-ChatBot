@@ -29,8 +29,7 @@
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/pronay2021/SoulCare-Therapy-ChatBot.git
-   
-   cd SoulCare-Therapy-ChatBot
+  
 
 2. **Install dependencies:**
    ```bash
